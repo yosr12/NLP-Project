@@ -1,0 +1,124 @@
+version: "3.1"
+
+intents:
+  - greet
+  - arabe
+  - carte
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - PaiementDerja
+  - Englishpaiement
+  - Paiementfrancais
+  - Sécur'Pass
+  - Identifiant et mot de passe
+  - Perte ou vol de téléphone
+  - Réalisation d'un virement
+  - Utilisation de ma carte de paiement
+  - send_email
+
+slots:
+  email:
+    type: text
+    influence_conversation: false
+    mappings:
+      - type: custom
+  subject:
+    type: text
+    influence_conversation: false
+    mappings:
+      - type: custom
+  message:
+    type: text
+    influence_conversation: false
+    mappings:
+      - type: custom
+
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+
+
+
+  utter_arabe:
+  - text: "marhbe bik"
+  - text: "asslema"
+  - text: "fesh najmou naaounouk"
+
+  utter_carte:
+  - text: "oui tnajem thel e site w tchouuf"
+  - text: "eyy bien sur"
+  - text: "eyy tnajem taamel demande mta carta w tahdher dans 2 jours"
+
+
+  utter_PaiementDerja:
+  - text: "Ey betbia tnajem tkhales fel blayes lkol sinon ken theb tkhales en ligne  lezemek taadyt lidentifiant mteek o noumoruk eli aamlt bih el compte mteek"
+
+  utter_Englishpaiement:
+  - text: "yes you can of course"
+
+  utter_Paiementfrancais:
+  - text: "oui vous pouvez bien sur :)"
+
+  utter_Sécur'Pass:
+  - text: "vous pouvez consulter le sites pour toute informations"
+
+  utter_Identifiant et mot de passe:
+  - text: "vous pouvez aller à l'agence la plus proche de vous pour reinstaller vos donnees"
+
+  utter_Perte ou vol de téléphone:
+  - text: vous pouvez aller à l'agence la plus proche de vous pour reinstaller vos donnees"
+
+  utter_Réalisation d'un virement:
+  - text: "soit via apllication soit à l'agence en remplissant les donnes necessaire "
+
+  utter_Utilisation de ma carte de paiement:
+  - text: "Ey betbia tnajem"
+
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+  utter_ask_email:
+  - text: "Please provide the email ID whom you want to an email."
+
+  utter_ask_subject:
+  - text: "Please provide the subject for your email."
+
+  utter_ask_message:
+  - text: "Please provide the message for your email."
+
+actions:
+  - action_submit
+
+forms:
+  email_form:
+     required_slots:
+      - email
+      - subject
+      - message
+
+
+
+   
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
