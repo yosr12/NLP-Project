@@ -1,0 +1,183 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: arabe
+  examples: |
+    - aaslema
+    - ahla
+    - bonjour
+    - bnj
+    - salut
+    - aaa
+    - waaaa
+    - salem
+
+- intent: carte 
+  examples: |
+    - nheb naamel carta ?
+    - kifesh nkharej 
+    - yekhi l carta disponible
+
+
+- intent: PaiementDerja
+  examples: |   
+   - kifeh	nkhaled	en	ligne	b		Apple	Pay	?
+   - kifeh	najem	nkhaled	b		Apple	Pay		fi	monoprix	wala	geant	wala	faza	akeak	?
+   
+
+- intent: Englishpaiement
+  examples: |   
+   - i want to pay with ApplePay
+   -  how can i pay in commercial center with ApplePay?
+
+- intent: Paiementfrancais
+  examples: |   
+   - comment je peux payer avec Apple card
+   - comment je peux payer dans les grandes surfaces ?
+
+- intent: Sécur'Pass
+  examples: |   
+   - A quoi me sert Sécur’Pass ?
+   -Comment activer Sécur’Pass ?
+   -Puis-je utiliser Sécur'Pass ?
+   -Pourquoi activer Sécur'Pass sur mon smartphone ?
+   -Puis-je activer Sécur'Pass à partir de mon ordinateur ou de ma tablette ?
+   -J’ai changé de téléphone (mais pas de numéro), est-ce que je peux toujours utiliser Sécur’Pass sur mon nouveau smartphone ?
+   -Puis-je utiliser Sécur’Pass simultanément sur plusieurs smartphones ?
+   -J’ai oublié mon code Sécur’Pass. Comment en obtenir un nouveau ?
+   -Comment modifier mon code Sécur’Pass ?
+
+- intent: Identifiant et mot de passe
+  examples: |   
+   -Que faire si j’ai oublié mon identifiant d'accès à ma banque à distance ?
+   -Que faire si j'ai oublié le mot de passe d'accès à ma banque à distance ?
+   -J’ai oublié mon identifiant. Mon conseiller peut-il me le communiquer ?
+   -Je souhaite que mon appli Banque Populaire mémorise mon identifiant. Comment faire ?
+   -J'ai saisi 3 fois un mot de passe erroné pour me connecter à ma banque en ligne. Que faire ?
+
+- intent: Perte ou vol de téléphone
+  examples: |   
+   -J’ai perdu mon smartphone : comment sécuriser l’accès à mon compte Banque Populaire ?
+   -Je n’ai plus de smartphone : puis-je continuer à utiliser Sécur’Pass ?
+
+
+- intent: Réalisation d'un virement
+  examples: |   
+   -Comment effectuer un virement ?
+   -Comment effectuer un virement vers un de mes comptes bancaires Banque Populaire ?
+   -Comment effectuer un virement vers l’un de mes comptes ouvert dans une autre banque ?
+   -Comment programmer un virement régulier ?
+   -Comment programmer un virement différé ?
+   -Combien de temps dois-je attendre pour qu’un virement entre mes comptes soit crédité ?
+   -J'attends un virement. Quand arrivera-t-il sur mon compte ?
+   -J’attends un virement. Comment savoir si l’argent est bien arrivé sur mon compte ?
+   -J’attends un virement. Pourquoi l’argent tarde-t-il à arriver ?
+   -Comment effectuer un virement instantané depuis mon mobile ?
+
+
+- intent: Utilisation de ma carte de paiement
+  examples: |   
+   -Comment consulter les dépenses réalisées avec ma carte bancaire à débit différé ?
+   -Qu’appelle-ton le paiement mobile sans contact ?
+   -J'ai reçu une nouvelle carte de paiement mais pas le code secret. Que faire ?
+   -Comment suivre la création de ma carte de paiement ?
+
+   
+
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: send_email
+  examples: |
+    - I want to to send email
+    - nheb nabath email
+    - je veux envoyer un email
+    - email
+    
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?

@@ -1,0 +1,94 @@
+version: "3.1"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+  - intent: arabe
+  - action: utter_arabe
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+- story: ayari
+  steps:
+  - intent: arabe
+  - action: utter_arabe
+
+- story: carta
+  steps:
+  - intent: carte
+  - action: utter_carte
+
+- story: PaiementDerja
+  steps:
+  - intent: PaiementDerja
+  - action: utter_PaiementDerja
+
+- story: Englishpaiement
+  steps:
+  - intent: Englishpaiement
+  - action: utter_PaiementDerja
+
+- story: Paiementfrancais
+  steps:
+  - intent: Paiementfrancais
+  - action: utter_Paiementfrancais
+
+- story: Sécur'Pass
+  steps:
+  - intent: Sécur'Pass
+  - action: utter_Sécur'Pass
+  
+- story: Identifiant et mot de passe
+  steps:
+  - intent: Identifiant et mot de passe
+  - action: utter_Identifiant et mot de passe
+
+
+- story: Perte ou vol de téléphone
+  steps:
+  - intent: Perte ou vol de téléphone
+  - action: utter_Perte ou vol de téléphone
+
+  
+- story: Réalisation d'un virement
+  steps:
+  - intent: Réalisation d'un virement
+  - action: utter_Réalisation d'un virement
+  
+
+- story: Utilisation de ma carte de paiement
+  steps:
+  - intent: Utilisation de ma carte de paiement
+  - action: utter_Utilisation de ma carte de paiement
+
+
+
+  
+
+
+
+
+  
